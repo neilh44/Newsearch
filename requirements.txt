@@ -5,4 +5,4 @@ beautifulsoup4
 scikit-learn
 langchain
 pymilvus
-sentence_transformers
+sentence-transformers
