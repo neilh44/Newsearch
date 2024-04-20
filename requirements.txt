@@ -3,4 +3,4 @@ pandas
 requests 
 beautifulsoup4 
 scikit-learn
-langchain-community
+langchain
