@@ -72,7 +72,7 @@ def insert_embedding(embedding, text, path, milvus_client, milvus_collection_nam
     milvus_client.insert(milvus_collection_name, data=[row])
 
 # Initialize Milvus client and collection name
-milvus_client = MilvusClient(uri="MILVUS_ENDPOINT", token="MILVUS_API_KEY")
+milvus_client = MilvusClient(uri="MILVUS_ENDPOINT", token="2eb20016c1b1e97e84926e9613fc61c9c447e4fb20de27ca6e8e0577ce9cea13cac25148c90c8f177e63e90c43b1b0c3d3764b33")
 milvus_collection_name = 'test'
 
 # Function to search in Milvus
