@@ -33,7 +33,7 @@ def main():
     st.title("Chat Prompt Search Engine")
 
     # Load or create DataFrame
-    if 'data.csv' not in st.session_state:
+    if 'data' not in st.session_state:
         st.session_state.data = pd.DataFrame(columns=['Title', 'Text'])
 
     # Chat prompt
@@ -42,7 +42,8 @@ def main():
         if url:
             indexed_data = index_website(url)
             if indexed_data:
-                st.session_state.data = st.session_state.data.append(indexed_data, ignore_index=True)
+                indexed_df = pd.DataFrame(indexed_data, index=[0])  # Create DataFrame with single row
+                st.session_state.data = pd.concat([st.session_state.data, indexed_df], ignore_index=True)
                 st.success("Website indexed successfully!")
             else:
                 st.error("Failed to index website.")
