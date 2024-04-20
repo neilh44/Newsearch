@@ -6,4 +6,4 @@ scikit-learn
 langchain
 pymilvus
 sentence-transformers
-common_helper
+common-helper
