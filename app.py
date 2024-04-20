@@ -5,7 +5,6 @@ from bs4 import BeautifulSoup
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from pymilvus import MilvusClient
 from sentence_transformers import SentenceTransformer
-from common_helper import create_embedding
 import openai
 import math
 
